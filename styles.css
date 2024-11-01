@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 400 14px 'Roboto', sans-serif;
+    background: #121212; /* Fundo escuro */
+    color: #ffffff; /* Texto claro */
+}
+
+input, button {
+    font: 400 18px 'Roboto', sans-serif;
+}
+
+form input {
+    width: 45%;
+    height: 50px;
+    color: #333;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 0 20px;
+    margin: 5px 2px;
+    background-color: #1e1e1e; /* Fundo do input escuro */
+    color: #ffffff; /* Texto do input claro */
+}
+
+.btn-app {
+    width: 20%;
+    height: 50px;
+    background: #ff0000; /* Azul escuro */
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 5px 2px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn-app:hover {
+    background: #ff0000; /* Azul mais escuro ao passar o mouse */
+    transform: scale(1.05); /* Aumenta levemente o botão ao passar o mouse */
+}
+
+.content-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.content-list ul li {
+    background: #2e2e2e;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.content-list ul li.show {
+    opacity: 1;
+}
+
+.content-list ul li a {
+    color: #ff0000;
+    text-decoration: none;
+    margin: 0 5px;
+    font-size: 14px;
+}
+
+.content-list ul li a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .app {
+        padding: 10px;
+    }
+
+    form input {
+        width: 100%;
+    }
+
+    .btn-app {
+        width: 100%;
+    }
+}
+
+.app {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    margin: 50px auto;
+    background: #1c1c1c;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
